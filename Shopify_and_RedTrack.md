@@ -7,9 +7,9 @@
 
 
 ![](images/kisspng-shopify-e-commerce-logo-magento-sales-5b0a2bf532b236.4196606915273932692077-300x201.png)
-![](images/Track.-Attribute.-Automate.-Scale-ROI-1.jpg)
+[![](images/Track.-Attribute.-Automate.-Scale-ROI-1.jpg)](https://www.redtrack.io/integrations/shopify-integration)
 
-Shopify is the leading cloud-based, multi-channel commerce platform. Merchants can use the software to design, set up, and manage their stores across multiple sales channels, including web, mobile, social media, marketplaces, brick-and-mortar locations, and pop-up shops. The Shopify platform was engineered for reliability and scale, making enterprise-level technology available to businesses of all sizes.
+[Shopify](https://www.shopify.com/free-trial?term=shopify&adid=565751954577&campaignid=15439902878&branded_enterprise=1&BOID=brand&gclid=CjwKCAjwyNSoBhA9EiwA5aYlb3j_zPy8yzQv5WGaiKs4uOO4raIOPuNhIZ0WxCbxqXluUpfYU3-mZRoCZoQQAvD_BwE&cmadid=516586848;cmadvertiserid=10730501;cmcampaignid=26990768;cmplacementid=324286430;cmcreativeid=163722649;cmsiteid=5500011) is the leading cloud-based, multi-channel commerce platform. Merchants can use the software to design, set up, and manage their stores across multiple sales channels, including web, mobile, social media, marketplaces, brick-and-mortar locations, and pop-up shops. The Shopify platform was engineered for reliability and scale, making enterprise-level technology available to businesses of all sizes.
 
 RedTrack allows you to have an API integration with Shopify. That means:
 
@@ -23,7 +23,7 @@ Important before you start
 
 
 
-The custom tracking domain should be connected to your RedTrack account before proceeding with the connection steps below.
+The [custom tracking domain](https://help.redtrack.io/knowledgebase/kb/conversion-tracking/adding-custom-domain/) should be connected to your RedTrack account before proceeding with the connection steps below.
 
 
 
@@ -33,7 +33,7 @@ RedTrack steps
 
 1. Create custom conversion events.
 
-Tools → Conversion tracking → Conversion types → add the events for Shopify. Use this guide to help you add the events, set up postback modes from them, etc.
+Tools → Conversion tracking → Conversion types → add the events for Shopify. Use [this guide](https://help.redtrack.io/knowledgebase/kb/basic-setup-9785/conversions-12026/tracking-event-types/) to help you add the events, set up postback modes from them, etc.
 
 ![](images/2025-01-27_12h50_10.png)
 
@@ -57,15 +57,15 @@ Here’s the list of Shopify events you can track with RT:
 If you don’t add **Shipping** as an event, conversions that are supposed to be counted as **Shipping** and have a negative revenue will be counted as **default conversions** but marked with a minus. That being said, **Total Revenue** will count all the conversions, including the minus ones.
 
 * **Subscription**  
-  *To set up this event type for Recharge subscribers refer to this article.*
+  *To set up this event type for Recharge subscribers refer to [this article](https://help.redtrack.io/knowledgebase/kb/partner-templates-channels/integrations-other-tools/e-com-integrations/shopify-private-app-integration/shopi-new-event-types-12672/).*
 * **Recurring**  
-  **To set up this event type for Recharge subscribers refer to this article.**
+  **To set up this event type for Recharge subscribers refer to [this article](https://help.redtrack.io/knowledgebase/kb/partner-templates-channels/integrations-other-tools/e-com-integrations/shopify-private-app-integration/shopi-new-event-types-12672/).**
 * **Cancelled**  
   *This event type presupposes manually and automatically cancelled orders from Shopify. **To track this event properly, add it in RT + set up a Webhook in Shopify (Webhook setup is described in the Connection steps section of this guide → step 3)*.**
 
 2. Create a custom Brand.
 
-Brands → New from scratch → use this guide to help you set up your brand properly.
+Brands → New from scratch → use [this guide](https://help.redtrack.io/knowledgebase/kb/basic-setup-9785/specific-for-advertisers-only-9832/adding-brand-and-website-8625/) to help you set up your brand properly.
 
 3. To send the PII data for better attribution go to the added Brand settings → Additional parameters → add the following parameters with the corresponding roles:
 
@@ -86,7 +86,7 @@ Brands → New from scratch → use this guide to help you set up your brand p
 
 4. Add your Website.
 
-Websites → New → use this guide to help you add your website.
+Websites → New → use [this guide](https://help.redtrack.io/knowledgebase/kb/basic-setup-9785/specific-for-advertisers-only-9832/adding-brand-and-website-8625/) to help you add your website.
 
 Once you’ve added your Website, you already have all the essential scripts, pixel and webhooks generated automatically in the **Scripts** tab:  
 ![](images/2025-01-27_12h59_45.png)  
@@ -96,8 +96,8 @@ You will need them later to connect to Shopify.
 
 The campaign for the unattributed (organic) traffic is already in place. Now you need to create the one for the paid traffic. Follow these simple steps:
 
-* Add the Traffic channel. Most of them have a preset template in RedTrack.
-* Launch a campaign for the paid Traffic channel. Your website/shop will be the main link added to the traffic channel.
+* Add the [Traffic channel](https://help.redtrack.io/knowledgebase/kb/partner-templates-channels/integrations-traffic-channels-9777/). Most of them have a preset template in RedTrack.
+* [Launch a campaign](https://help.redtrack.io/knowledgebase/kb/basic-setup-9785/specific-for-advertisers-only-9832/creating-campaign-guide-for-advertisers-8634/) for the paid Traffic channel. Your website/shop will be the main link added to the traffic channel.
 
 
 Shopify steps
@@ -181,7 +181,7 @@ Open this if you **don’t have the generated scripts in your account**
 
 If you have the Offer form and no automatically generated scripts, then you need to:
 
-* Create and copy the universal tracking script. Use this article → I’m affiliate section.
+* Create and copy the universal tracking script. Use [this article](https://help.redtrack.io/knowledgebase/kb/conversion-tracking/universal-script/) → I’m affiliate section.
 * Copy this Web events tracking Events.js script:
 
 ```
@@ -283,32 +283,32 @@ Settings → Notifications → Webhooks → Create webhook:
 
 
 **Important!**  
-▸ If you want to track **manually added orders in Shopify** with RedTrack, refer to this article for additional setup steps.  
-▸ If your **Shopify store domain or/and custom tracking domain were changed** you must update these domains in RedTrack and/or Shopify for correct tracking. Refer to this article for additional setup steps.  
-▸ If you use a **landing page before the shop**, plus the landing page and Shopify shop domains are different, refer to this article for setup.
+▸ If you want to track **manually added orders in Shopify** with RedTrack, refer to [this article](https://help.redtrack.io/knowledgebase/kb/partner-templates-channels/integrations-other-tools/e-com-integrations/shopify-private-app-integration/shopify-adding-manual-orders-14023/) for additional setup steps.  
+▸ If your **Shopify store domain or/and custom tracking domain were changed** you must update these domains in RedTrack and/or Shopify for correct tracking. Refer to [this article](https://help.redtrack.io/knowledgebase/kb/partner-templates-channels/integrations-other-tools/e-com-integrations/shopify-private-app-integration/shopify-domain-changes-14111/) for additional setup steps.  
+▸ If you use a **landing page before the shop**, plus the landing page and Shopify shop domains are different, refer to [this article](https://help.redtrack.io/knowledgebase/kb/basic-setup-9785/specific-for-advertisers-only-9832/landing-page-before-e-com-shop/) for setup.
 
 #### Articles
 
-* Shopify: domain changes
-* Shopify: Recharge subscribers
-* Shopify: adding manual orders
-* Shopify: other platform subscribers
+* [Shopify: domain changes](https://help.redtrack.io/knowledgebase/kb/automation/e-com-integrations/shopify-private-app-integration/shopify-domain-changes-14111/)
+* [Shopify: Recharge subscribers](https://help.redtrack.io/knowledgebase/kb/automation/e-com-integrations/shopify-private-app-integration/shopi-new-event-types-12672/)
+* [Shopify: adding manual orders](https://help.redtrack.io/knowledgebase/kb/automation/e-com-integrations/shopify-private-app-integration/shopify-adding-manual-orders-14023/)
+* [Shopify: other platform subscribers](https://help.redtrack.io/knowledgebase/kb/automation/e-com-integrations/shopify-private-app-integration/shopi-plus-other-platform-subscriptions-12987/)
  
 
 * Tagged:
-* add shopify
-* API integration
-* connect shopify
-* e-com shop
-* shopify
-* shopify integration
-* shopify pixel
-* shopify redtrack integration
-* shopify theme liquid
+* [add shopify](https://help.redtrack.io/doc-tag/add-shopify/)
+* [API integration](https://help.redtrack.io/doc-tag/api-integration/)
+* [connect shopify](https://help.redtrack.io/doc-tag/connect-shopify/)
+* [e-com shop](https://help.redtrack.io/doc-tag/e-com-shop/)
+* [shopify](https://help.redtrack.io/doc-tag/shopify/)
+* [shopify integration](https://help.redtrack.io/doc-tag/shopify-integration/)
+* [shopify pixel](https://help.redtrack.io/doc-tag/shopify-pixel/)
+* [shopify redtrack integration](https://help.redtrack.io/doc-tag/shopify-redtrack-integration/)
+* [shopify theme liquid](https://help.redtrack.io/doc-tag/shopify-theme-liquid/)
 
 Was this page helpful? 
-Yes 
-No 
+[Yes](# "1 person found this useful") 
+[No](# "No votes yet") 
 
 
 
@@ -318,34 +318,33 @@ No
 
 #### Related articles
 
-* WooCommerce and RedTrack
-* Exoclick and RedTrack
-* Outbrain and RedTrack
-* Landing page before e-commerce shop
-* AdMaven and RedTrack
-* AppLovin and RedTrack
-* Newsbreak and RedTrack
-* Tonic (traffic channel) and RedTrack
-* Revcontent and RedTrack
-* TikTok and RedTrack
-* ReachEffect and RedTrack
-* RichPush and RedTrack
-* TrafficJunky and RedTrack
-* Adnium and RedTrack
-* ClickBank and RedTrack (INS integration)
-* Bing Ads and RedTrack
-* HilltopAds and RedTrack
-* MegaPu.sh and RedTrack
-* Facebook and RedTrack
-* Pushground and RedTrack
-* TrafficStars and RedTrack
-* Taboola and RedTrack
-* PrestaShop and RedTrack
-* PropellerAds and RedTrack
-* Google Ads and RedTrack
-* Zeropark and RedTrack
+* [Adnium and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/adnium/)
+* [Facebook and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/facebook-and-instagram/)
+* [Landing page before e-commerce shop](https://help.redtrack.io/knowledgebase/kb/tracker-setup-for-advertisers/landing-page-before-e-com-shop/)
+* [Bing Ads and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/bing-ads/)
+* [Tonic (traffic channel) and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/tonic-2/)
+* [Google Ads and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/google-ads-integration/)
+* [ClickBank and RedTrack (INS integration)](https://help.redtrack.io/knowledgebase/kb/automation/integrated-affiliate-networks/clickbank/)
+* [ReachEffect and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/reacheffect/)
+* [HilltopAds and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/hilltopads/)
+* [AdMaven and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/admaven/)
+* [Revcontent and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/revcontent/)
+* [MegaPu.sh and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/megapu-sh/)
+* [WooCommerce and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/e-com-integrations/redtrack-io-woocom-plugin-setup/)
+* [RichPush and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/richads/)
+* [Taboola and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/taboola/)
+* [Zeropark and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/zeropark/)
+* [TrafficStars and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/trafficstars/)
+* [Newsbreak and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/newsbreak/)
+* [TikTok and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/tiktok/)
+* [TrafficJunky and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/trafficjunky/)
+* [Exoclick and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/exoclick/)
+* [PrestaShop and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/e-com-integrations/prestashop/)
+* [Pushground and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/pushground/)
+* [PropellerAds and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/propellerads/)
+* [Outbrain and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/outbrain/)
+* [AppLovin and RedTrack](https://help.redtrack.io/knowledgebase/kb/automation/traffic-source-integration-status-2/applovin-and-redtrack/)
 * See More
-
 
 
 
